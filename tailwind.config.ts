@@ -19,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'tt-lakes': ['TT Lakes Neue', 'Arial', 'sans-serif'],
+				'montreal': ['Neue Montreal', 'Helvetica', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
