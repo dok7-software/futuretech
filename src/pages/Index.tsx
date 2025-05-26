@@ -16,39 +16,52 @@ const Index = () => {
       <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-future-tech-primary via-purple-900/20 to-black"></div>
         <div className="container mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 animate-slide-in">
-              <div>
-                <Badge className="mb-4 bg-future-tech-accent text-future-tech-primary font-montreal font-semibold px-4 py-2">
-                  {t('hero.badge')}
-                </Badge>
-                <h1 className="text-5xl lg:text-7xl font-tt-lakes font-bold mb-6">
-                  <span className="text-white">{t('hero.title1')}</span>
-                  <br />
-                  <span className="text-future-tech-accent">{t('hero.title2')}</span>
-                </h1>
-                <p className="text-xl lg:text-2xl text-future-tech-secondary mb-8 leading-relaxed font-montreal">
-                  {t('hero.subtitle')}
-                </p>
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-0">
+            {/* Columna izquierda: textos y logos */}
+            <div className="flex flex-col items-start max-w-2xl gap-8 animate-slide-in flex-1">
+              <h1 className="text-5xl lg:text-7xl font-tt-lakes font-bold text-white">{t('hero.title')}</h1>
+              <p className="text-2xl lg:text-3xl italic text-future-tech-secondary font-montreal">{t('hero.subtitle')}</p>
+              <div className="w-full flex flex-col gap-4">
+                <div className="w-full">
+                  <div className="border-2 border-white rounded-full px-8 py-4 text-center text-lg lg:text-2xl font-tt-lakes font-semibold text-white tracking-wide" style={{letterSpacing:'0.02em'}}>
+                    {t('hero.cta')}
+                  </div>
+                </div>
+                <div className="w-full">
+                  <div className="text-lg lg:text-2xl font-tt-lakes font-bold text-white mt-2" style={{letterSpacing:'0.02em'}}>
+                    {t('hero.start')}
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-future-tech-accent text-future-tech-primary hover:bg-future-tech-accent/90 font-tt-lakes font-semibold px-8 py-4 text-lg"
-                  onClick={() => window.open('https://forms.gle/9BWufxkJmet4Rt9C9', '_blank')}
-                >
-                  {t('header.apply')} <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-future-tech-secondary text-future-tech-secondary hover:bg-future-tech-secondary hover:text-future-tech-primary px-8 py-4 text-lg font-montreal"
-                >
-                  {t('header.more-info')}
-                </Button>
+              {/* Logos Bar alineada a la izquierda dentro del banner */}
+              <div className="mt-10">
+                <div className="flex flex-col items-start gap-2">
+                  <div className="flex gap-12 items-end">
+                    {/* Columna 1: Finançat per */}
+                    <div className="flex flex-col items-start gap-2">
+                      <span className="text-xs md:text-sm font-semibold text-white mb-1">{t('logos.financat')}</span>
+                      <div className="flex gap-4 items-end">
+                        <img src="/lovable-uploads/cofinanciado%20por%20la%20union%20europea.png" alt="Cofinanciado por la Unión Europea" className="h-10 md:h-12 object-contain" style={{maxWidth:'140px'}} />
+                        <img src="/lovable-uploads/logo%20generaliltat%20catalunya%20blanco.png" alt="Generalitat de Catalunya" className="h-8 md:h-10 object-contain" style={{maxWidth:'180px'}} />
+                      </div>
+                    </div>
+                    {/* Columna 2: Programa de */}
+                    <div className="flex flex-col items-start gap-2">
+                      <span className="text-xs md:text-sm font-semibold text-white mb-1">{t('logos.programa')}</span>
+                      <div className="flex gap-4 items-end">
+                        <img src="/lovable-uploads/logo%2022%20network%20azul%20fondo%20blanco.png" alt="22@Network Barcelona" className="h-8 md:h-10 object-contain" style={{maxWidth:'100px'}} />
+                        <img src="/lovable-uploads/logo%20cambra%20comerc%20barcelona.png" alt="Cambra de Comerç Barcelona" className="h-8 md:h-10 object-contain" style={{maxWidth:'100px'}} />
+                      </div>
+                    </div>
+                  </div>
+                  <span className="text-xs md:text-sm text-white mt-3 font-montreal" style={{maxWidth:'600px'}}>
+                    {t('logos.leyenda')}
+                  </span>
+                </div>
               </div>
             </div>
-            <div className="flex justify-center lg:justify-end animate-fade-in">
+            {/* Columna derecha: imagen decorativa */}
+            <div className="flex justify-center lg:justify-end w-full lg:w-auto flex-1 animate-fade-in mt-8 lg:mt-0">
               <div className="relative">
                 <div className="absolute inset-0 bg-future-tech-accent/20 rounded-full blur-3xl animate-pulse"></div>
                 <img 

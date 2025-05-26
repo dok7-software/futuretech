@@ -34,10 +34,10 @@ const translations = {
     'header.more-info': 'Más Información',
     
     // Hero Section
-    'hero.badge': '22@Network x Cambra de Comerç Barcelona',
-    'hero.title1': 'Future Tech',
-    'hero.title2': 'Programa de Preaceleración',
-    'hero.subtitle': 'Una iniciativa impulsada por 22@Network y la Cambra de Comerç de Barcelona, para acelerar la adopción de tecnologías exponenciales y disruptivas en Catalunya.',
+    'hero.title': 'FUTURE TECH',
+    'hero.subtitle': 'Preaceleración real para startups reales',
+    'hero.cta': 'PLAZAS ABIERTAS HASTA EL 4 DE JULIO',
+    'hero.start': 'INICIO DEL PROGRAMA EL 15 DE SEPTIEMBRE',
     
     // About Section
     'about.title': '¿Qué es Future Tech?',
@@ -89,6 +89,11 @@ const translations = {
     
     // Footer
     'footer.copyright': '© 2025 Future Tech - 22@Network x Cambra de Comerç de Barcelona',
+
+    // Logos Bar
+    'logos.financat': 'FINANCIADO POR:',
+    'logos.programa': 'PROGRAMA DE:',
+    'logos.leyenda': "Financiado por el Departament d'Empresa i Treball de la Generalitat de Catalunya y cofinançat pel Fons Social Europeu Plus",
     
     // Technologies Section
     'technologies.title': 'Tecnologías Clave e Impacto Sectorial',
@@ -138,10 +143,10 @@ const translations = {
     'header.more-info': 'Més Informació',
     
     // Hero Section
-    'hero.badge': '22@Network x Cambra de Comerç Barcelona',
-    'hero.title1': 'Future Tech',
-    'hero.title2': 'Programa de Preacceleració',
-    'hero.subtitle': 'Una iniciativa impulsada per 22@Network i la Cambra de Comerç de Barcelona, per accelerar l\'adopció de tecnologies exponencials i disruptives a Catalunya.',
+    'hero.title': 'FUTURE TECH',
+    'hero.subtitle': 'Preacceleració real per startups reals',
+    'hero.cta': 'PLACES OBERTES FINS EL 4 DE JULIOL',
+    'hero.start': 'INICI DEL PROGRAMA EL 15 DE SETEMBRE',
     
     // About Section
     'about.title': 'Què és Future Tech?',
@@ -193,6 +198,11 @@ const translations = {
     
     // Footer
     'footer.copyright': '© 2025 Future Tech - 22@Network x Cambra de Comerç de Barcelona',
+
+    // Logos Bar
+    'logos.financat': 'FINANÇAT PER:',
+    'logos.programa': 'PROGRAMA DE:',
+    'logos.leyenda': "Finançat pel Departament d'Empresa i Treball de la Generalitat de Catalunya i cofinançat pel Fons Social Europeu Plus",
     
     // Technologies Section
     'technologies.title': 'Tecnologies Clau i Impacte Sectorial',
