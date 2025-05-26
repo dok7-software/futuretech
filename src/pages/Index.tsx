@@ -6,14 +6,14 @@ import Header from "@/components/Header";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Index = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-future-tech-primary via-future-tech-primary/90 to-gray-900 text-white font-montreal">
+    <div className="min-h-screen bg-gradient-to-b from-future-tech-primary via-gray-900 to-black text-white font-montreal">
       <Header />
       
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-gradient-to-b from-future-tech-primary via-future-tech-primary/90 to-future-tech-secondary/10">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-transparent">
         <div className="absolute inset-0 bg-gradient-to-br from-future-tech-primary via-purple-900/20 to-black"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-0">
@@ -23,12 +23,12 @@ const Index = () => {
               <p className="text-2xl lg:text-3xl italic text-future-tech-secondary font-montreal text-center w-full">{t('hero.subtitle')}</p>
               <div className="w-full flex flex-col gap-4">
                 <div className="w-full">
-                  <div className="border-2 border-white rounded-full px-8 py-4 text-center text-lg lg:text-2xl font-montreal font-semibold text-white tracking-wide w-full mx-auto" style={{letterSpacing:'0.02em'}}>
+                  <div className="border-2 border-white rounded-full px-8 py-4 text-center text-lg lg:text-2xl font-montreal font-semibold text-white tracking-wide w-full" style={{letterSpacing:'0.02em'}}>
                     {t('hero.cta')}
                   </div>
                 </div>
                 <div className="w-full">
-                  <div className="text-lg lg:text-2xl font-montreal font-bold text-white mt-2 text-center w-full mx-auto" style={{letterSpacing:'0.02em'}}>
+                  <div className="text-lg lg:text-2xl font-montreal font-bold text-white mt-2 text-center w-full" style={{letterSpacing:'0.02em'}}>
                     {t('hero.start')}
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const Index = () => {
       </section>
 
       {/* What is Future Tech Section */}
-      <section id="about" className="py-20 bg-gradient-to-b from-transparent via-gray-900/80 to-gray-900">
+      <section id="about" className="py-20 bg-transparent">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
@@ -109,59 +109,19 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Target Audience Section */}
-      <section id="target" className="py-20 bg-gradient-to-b from-gray-900/80 via-gray-900 to-future-tech-primary/60">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
-              <span dangerouslySetInnerHTML={{ __html: t('target.title').replace('dirigido', '<span class="text-future-tech-accent">dirigido</span>') }} />
-            </h2>
-            <p className="text-xl text-future-tech-secondary max-w-3xl mx-auto font-montreal">
-              {t('target.subtitle')}
-            </p>
-          </div>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h3 className="text-2xl font-tt-lakes font-semibold text-future-tech-accent mb-6">{t('target.technologies')}</h3>
-              <div className="grid sm:grid-cols-2 gap-4">
-                {[
-                  { icon: Lightbulb, title: t('target.ai') },
-                  { icon: Network, title: t('target.iot') },
-                  { icon: Shield, title: t('target.blockchain') },
-                  { icon: Eye, title: t('target.ar-vr') }
-                ].map((tech, index) => (
-                  <Card key={index} className="bg-gray-800/50 border-gray-700 hover:border-future-tech-accent transition-colors">
-                    <CardContent className="p-4 flex items-center space-x-3">
-                      <tech.icon className="h-6 w-6 text-future-tech-accent" />
-                      <span className="text-white font-montreal font-medium">{tech.title}</span>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-            
-            <div className="space-y-6">
-              <h3 className="text-2xl font-tt-lakes font-semibold text-future-tech-accent mb-6">{t('target.sectors')}</h3>
-              <div className="space-y-3">
-                {[t('target.health'), t('target.industry'), t('target.logistics'), t('target.energy'), t('target.tourism')].map((sector, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-future-tech-accent rounded-full"></div>
-                    <span className="text-future-tech-secondary text-lg font-montreal">{sector}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Technologies Detail Section */}
-      <section id="technologies" className="py-20 bg-gradient-to-b from-future-tech-primary/60 via-future-tech-primary to-gray-900/80">
+      <section id="technologies" className="py-20 bg-transparent">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
-              <span dangerouslySetInnerHTML={{ __html: t('technologies.title').replace('Tecnologías', '<span class="text-future-tech-accent">Tecnologías</span>') }} />
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: t('technologies.title').replace(
+                    language === 'ca' ? 'Tecnologies' : 'Tecnologías',
+                    `<span class="text-future-tech-accent">${language === 'ca' ? 'Tecnologies' : 'Tecnologías'}</span>`
+                  )
+                }}
+              />
             </h2>
           </div>
           
@@ -266,24 +226,31 @@ const Index = () => {
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="py-20 bg-gradient-to-b from-gray-900/80 via-future-tech-primary to-future-tech-primary/80">
+      <section id="benefits" className="py-20 bg-transparent">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
-              <span dangerouslySetInnerHTML={{ __html: t('benefits.title').replace('Ejes', '<span class="text-future-tech-accent">Ejes</span>') }} />
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: t('benefits.title').replace(
+                    language === 'ca' ? 'Eixos' : 'Ejes',
+                    `<span class="text-future-tech-accent">${language === 'ca' ? 'Eixos' : 'Ejes'}</span>`
+                  )
+                }}
+              />
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Clock, number: "115", text: t('benefits.hours-training') },
-              { icon: Users, number: "80", text: t('benefits.hours-mentoring') },
-              { icon: Target, number: "100%", text: t('benefits.mvp-validation') },
-              { icon: Network, number: "∞", text: t('benefits.investor-connection') }
+              { icon: Clock, number: "115", text: t('benefits.hours-training').charAt(0).toUpperCase() + t('benefits.hours-training').slice(1) },
+              { icon: Users, number: "80", text: t('benefits.hours-mentoring').charAt(0).toUpperCase() + t('benefits.hours-mentoring').slice(1) },
+              { icon: Target, number: "100%", text: t('benefits.mvp-validation').charAt(0).toUpperCase() + t('benefits.mvp-validation').slice(1) },
+              { icon: Network, number: "∞", text: t('benefits.investor-connection').charAt(0).toUpperCase() + t('benefits.investor-connection').slice(1) }
             ].map((benefit, index) => (
-              <Card key={index} className="bg-gray-800/30 border-gray-700 hover:border-future-tech-accent transition-all duration-300 hover:scale-105">
+              <Card key={index} className="bg-gray-800/30 border-gray-700 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
                 <CardContent className="p-8 text-center">
-                  <benefit.icon className="h-12 w-12 text-future-tech-accent mx-auto mb-4" />
+                  <benefit.icon className="h-12 w-12 text-future-tech-accent mx-auto mb-4 group-hover:text-future-tech-accent transition-colors" />
                   <div className="text-3xl font-tt-lakes font-bold text-future-tech-accent mb-2">{benefit.number}</div>
                   <p className="text-future-tech-secondary font-montreal">{benefit.text}</p>
                 </CardContent>
@@ -292,11 +259,11 @@ const Index = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Card className="bg-gray-800/30 border-gray-700 max-w-md mx-auto">
-              <CardContent className="p-6">
-                <Network className="h-12 w-12 text-future-tech-accent mx-auto mb-4" />
-                <h3 className="text-xl font-tt-lakes font-semibold text-white mb-2">{t('benefits.match-play')}</h3>
-                <p className="text-future-tech-secondary font-montreal">{t('benefits.match-play-desc')}</p>
+            <Card className="bg-gray-800/30 border-gray-700 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group max-w-md mx-auto">
+              <CardContent className="p-6 text-center">
+                <Network className="h-12 w-12 text-future-tech-accent mx-auto mb-4 group-hover:text-future-tech-accent transition-colors" />
+                <h3 className="text-xl font-tt-lakes font-semibold text-white mb-2 group-hover:text-future-tech-accent transition-colors">{t('benefits.match-play')}</h3>
+                <p className="text-future-tech-secondary font-montreal">{t('benefits.match-play-desc').charAt(0).toUpperCase() + t('benefits.match-play-desc').slice(1)}</p>
               </CardContent>
             </Card>
           </div>
@@ -304,11 +271,18 @@ const Index = () => {
       </section>
 
       {/* Catalunya Hub Section */}
-      <section id="catalunya" className="py-20 bg-gradient-to-b from-future-tech-primary/80 via-gray-900 to-future-tech-primary/60">
+      <section id="catalunya" className="py-20 bg-transparent">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
-              Catalunya: <span dangerouslySetInnerHTML={{ __html: t('catalunya.title').replace('Hub', '<span class="text-future-tech-accent">Hub</span>') }} />
+              Catalunya: <span
+                dangerouslySetInnerHTML={{
+                  __html: t('catalunya.title').replace(
+                    'Hub',
+                    `<span class="text-future-tech-accent">Hub</span>`
+                  )
+                }}
+              />
             </h2>
             <p className="text-xl text-future-tech-secondary leading-relaxed font-montreal">
               {t('catalunya.description')}
@@ -321,36 +295,41 @@ const Index = () => {
       </section>
 
       {/* Key Dates Section */}
-      <section id="dates" className="py-20 bg-gradient-to-b from-gray-900/80 via-future-tech-primary/90 to-future-tech-primary">
+      <section id="dates" className="py-20 bg-transparent">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
-              <span dangerouslySetInnerHTML={{ __html: t('dates.title').replace('Convocatoria', '<span class="text-future-tech-accent">Convocatoria</span>') }} />
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: t('dates.title').replace(
+                    language === 'ca' ? 'Convocatòria' : 'Convocatoria',
+                    `<span class="text-future-tech-accent">${language === 'ca' ? 'Convocatòria' : 'Convocatoria'}</span>`
+                  )
+                }}
+              />
             </h2>
           </div>
           
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <Card className="bg-gray-800/50 border-gray-700">
+              <Card className={`bg-gray-800/50 border-gray-700 hover:border-future-tech-accent transition-colors group`}> 
                 <CardContent className="p-6 text-center">
-                  <Calendar className="h-12 w-12 text-future-tech-accent mx-auto mb-4" />
-                  <h3 className="text-xl font-tt-lakes font-semibold text-white mb-2">{t('dates.duration')}</h3>
+                  <Calendar className="h-12 w-12 text-future-tech-accent mx-auto mb-4 group-hover:text-future-tech-accent transition-colors" />
+                  <h3 className="text-xl font-tt-lakes font-semibold text-white mb-2 group-hover:text-future-tech-accent transition-colors">{t('dates.duration')}</h3>
                   <p className="text-future-tech-secondary font-montreal">{t('dates.duration-value')}</p>
                 </CardContent>
               </Card>
-              
-              <Card className="bg-gray-800/50 border-gray-700">
+              <Card className={`bg-gray-800/50 border-gray-700 hover:border-future-tech-accent transition-colors group`}>
                 <CardContent className="p-6 text-center">
-                  <Globe className="h-12 w-12 text-future-tech-accent mx-auto mb-4" />
-                  <h3 className="text-xl font-tt-lakes font-semibold text-white mb-2">{t('dates.modality')}</h3>
+                  <Globe className="h-12 w-12 text-future-tech-accent mx-auto mb-4 group-hover:text-future-tech-accent transition-colors" />
+                  <h3 className="text-xl font-tt-lakes font-semibold text-white mb-2 group-hover:text-future-tech-accent transition-colors">{t('dates.modality')}</h3>
                   <p className="text-future-tech-secondary font-montreal">{t('dates.modality-value')}</p>
                 </CardContent>
               </Card>
-              
-              <Card className="bg-gray-800/50 border-gray-700 border-future-tech-accent">
+              <Card className={`bg-gray-800/50 border-gray-700 hover:border-future-tech-accent transition-colors group`}>
                 <CardContent className="p-6 text-center">
-                  <Clock className="h-12 w-12 text-future-tech-accent mx-auto mb-4" />
-                  <h3 className="text-xl font-tt-lakes font-semibold text-future-tech-accent mb-2">{t('dates.deadline')}</h3>
+                  <Clock className="h-12 w-12 text-future-tech-accent mx-auto mb-4 group-hover:text-future-tech-accent transition-colors" />
+                  <h3 className="text-xl font-tt-lakes font-semibold text-future-tech-accent mb-2 group-hover:text-future-tech-accent transition-colors">{t('dates.deadline')}</h3>
                   <p className="text-white font-montreal font-semibold">{t('dates.deadline-value')}</p>
                 </CardContent>
               </Card>
@@ -370,7 +349,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-b from-future-tech-primary via-gray-900/80 to-black">
+      <section id="contact" className="py-20 bg-transparent">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center space-y-8">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">

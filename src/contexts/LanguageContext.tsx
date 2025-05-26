@@ -70,7 +70,7 @@ const translations = {
     'benefits.match-play-desc': 'Acceso a la segunda fase Match & Play de 22@Network',
     
     // Catalunya Section
-    'catalunya.title': 'Catalunya: Hub Tecnológico Europeo',
+    'catalunya.title': 'Hub Tecnológico Europeo',
     'catalunya.description': 'El programa se desarrolla en un ecosistema vibrante, con hubs como el 22@, donde se crean sinergias entre startups y empresas. Potencia la innovación en sectores estratégicos, atrae talento e inversiones, y contribuye a una economía más diversa y sostenible.',
     
     // Dates Section
@@ -179,7 +179,7 @@ const translations = {
     'benefits.match-play-desc': 'Accés a la segona fase Match & Play de 22@Network',
     
     // Catalunya Section
-    'catalunya.title': 'Catalunya: Hub Tecnològic Europeu',
+    'catalunya.title': 'Hub Tecnològic Europeu',
     'catalunya.description': 'El programa es desenvolupa en un ecosistema vibrant, amb hubs com el 22@, on es creen sinergies entre startups i empreses. Potencia la innovació en sectors estratègics, atrau talent i inversions, i contribueix a una economia més diversa i sostenible.',
     
     // Dates Section
