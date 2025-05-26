@@ -9,17 +9,17 @@ const Index = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-future-tech-primary text-white font-montreal">
+    <div className="min-h-screen bg-gradient-to-b from-future-tech-primary via-future-tech-primary/90 to-gray-900 text-white font-montreal">
       <Header />
       
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-gradient-to-b from-future-tech-primary via-future-tech-primary/90 to-future-tech-secondary/10">
         <div className="absolute inset-0 bg-gradient-to-br from-future-tech-primary via-purple-900/20 to-black"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-0">
             {/* Columna izquierda: textos y logos */}
             <div className="flex flex-col items-start max-w-2xl gap-8 animate-slide-in flex-1">
-              <h1 className="text-5xl lg:text-7xl font-tt-lakes font-bold text-white">{t('hero.title')}</h1>
+              <h1 className="text-5xl lg:text-7xl font-tt-lakes font-bold text-future-tech-accent">{t('hero.title')}</h1>
               <p className="text-2xl lg:text-3xl italic text-future-tech-secondary font-montreal">{t('hero.subtitle')}</p>
               <div className="w-full flex flex-col gap-4">
                 <div className="w-full">
@@ -76,7 +76,7 @@ const Index = () => {
       </section>
 
       {/* What is Future Tech Section */}
-      <section id="about" className="py-20 bg-gradient-to-b from-future-tech-primary to-gray-900">
+      <section id="about" className="py-20 bg-gradient-to-b from-transparent via-gray-900/80 to-gray-900">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
@@ -110,7 +110,7 @@ const Index = () => {
       </section>
 
       {/* Target Audience Section */}
-      <section id="target" className="py-20 bg-gray-900">
+      <section id="target" className="py-20 bg-gradient-to-b from-gray-900/80 via-gray-900 to-future-tech-primary/60">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
@@ -157,7 +157,7 @@ const Index = () => {
       </section>
 
       {/* Technologies Detail Section */}
-      <section id="technologies" className="py-20 bg-future-tech-primary">
+      <section id="technologies" className="py-20 bg-gradient-to-b from-future-tech-primary/60 via-future-tech-primary to-gray-900/80">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
@@ -266,7 +266,7 @@ const Index = () => {
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="py-20 bg-future-tech-primary">
+      <section id="benefits" className="py-20 bg-gradient-to-b from-gray-900/80 via-future-tech-primary to-future-tech-primary/80">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
@@ -304,7 +304,7 @@ const Index = () => {
       </section>
 
       {/* Catalunya Hub Section */}
-      <section id="catalunya" className="py-20 bg-gradient-to-b from-gray-900 to-future-tech-primary">
+      <section id="catalunya" className="py-20 bg-gradient-to-b from-future-tech-primary/80 via-gray-900 to-future-tech-primary/60">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
@@ -321,7 +321,7 @@ const Index = () => {
       </section>
 
       {/* Key Dates Section */}
-      <section id="dates" className="py-20 bg-gray-900">
+      <section id="dates" className="py-20 bg-gradient-to-b from-gray-900/80 via-future-tech-primary/90 to-future-tech-primary">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
@@ -370,7 +370,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-future-tech-primary">
+      <section id="contact" className="py-20 bg-gradient-to-b from-future-tech-primary via-gray-900/80 to-black">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center space-y-8">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
