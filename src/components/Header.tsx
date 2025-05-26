@@ -4,7 +4,7 @@ import { Switch } from "@/components/ui/switch";
 import { Menu, X, Linkedin, Instagram, Facebook } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const Header = () => {
+const Header = ({ onApplyClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
 
@@ -91,7 +91,7 @@ const Header = () => {
             <Button 
               size="sm" 
               className="bg-future-tech-accent text-future-tech-primary hover:bg-future-tech-accent/90 font-tt-lakes font-semibold ml-4"
-              onClick={() => window.open('https://forms.gle/9BWufxkJmet4Rt9C9', '_blank')}
+              onClick={onApplyClick}
             >
               {t('header.apply')}
             </Button>
@@ -152,7 +152,7 @@ const Header = () => {
               <Button 
                 size="sm" 
                 className="bg-future-tech-accent text-future-tech-primary hover:bg-future-tech-accent/90 font-tt-lakes font-semibold w-fit"
-                onClick={() => window.open('https://forms.gle/9BWufxkJmet4Rt9C9', '_blank')}
+                onClick={onApplyClick}
               >
                 {t('header.apply')}
               </Button>

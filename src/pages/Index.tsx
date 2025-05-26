@@ -4,13 +4,16 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Mail, Users, Target, Lightbulb, Network, Shield, Eye, ArrowRight, Clock, Globe, MapPin } from "lucide-react";
 import Header from "@/components/Header";
 import { useLanguage } from "@/contexts/LanguageContext";
+import StepForm from '../components/StepForm';
+import { useState } from 'react';
 
 const Index = () => {
   const { t, language } = useLanguage();
+  const [showForm, setShowForm] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-future-tech-primary via-gray-900 to-black text-white font-montreal">
-      <Header />
+      <Header onApplyClick={() => setShowForm(true)} />
       
       {/* Hero Section */}
       <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-transparent">
@@ -338,10 +341,10 @@ const Index = () => {
             <div className="text-center">
               <Button 
                 size="lg" 
-                className="bg-future-tech-accent text-future-tech-primary hover:bg-future-tech-accent/90 font-tt-lakes font-semibold px-12 py-4 text-xl"
-                onClick={() => window.open('https://forms.gle/9BWufxkJmet4Rt9C9', '_blank')}
+                className="bg-future-tech-accent text-future-tech-primary hover:bg-future-tech-accent/90 font-tt-lakes font-semibold px-8 py-4 text-lg"
+                onClick={() => setShowForm(true)}
               >
-                {t('dates.apply')} <ArrowRight className="ml-3 h-6 w-6" />
+                {t('header.apply')} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>
@@ -379,6 +382,18 @@ const Index = () => {
           </p>
         </div>
       </footer>
+
+      {/* Modal Formulario */}
+      {showForm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
+          <div className="relative w-full max-w-xl mx-auto bg-white/10 rounded-2xl shadow-2xl p-0 md:p-0">
+            <button onClick={() => setShowForm(false)} className="absolute top-4 right-4 text-white text-2xl font-bold z-10 hover:text-future-tech-accent transition">&times;</button>
+            <div className="p-4 md:p-8">
+              <StepForm />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
