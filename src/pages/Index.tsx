@@ -20,15 +20,15 @@ const Index = () => {
             {/* Columna izquierda: textos y logos */}
             <div className="flex flex-col items-start max-w-2xl gap-8 animate-slide-in flex-1">
               <h1 className="text-5xl lg:text-7xl font-tt-lakes font-bold text-future-tech-accent">{t('hero.title')}</h1>
-              <p className="text-2xl lg:text-3xl italic text-future-tech-secondary font-montreal">{t('hero.subtitle')}</p>
+              <p className="text-2xl lg:text-3xl italic text-future-tech-secondary font-montreal text-center w-full">{t('hero.subtitle')}</p>
               <div className="w-full flex flex-col gap-4">
                 <div className="w-full">
-                  <div className="border-2 border-white rounded-full px-8 py-4 text-center text-lg lg:text-2xl font-tt-lakes font-semibold text-white tracking-wide" style={{letterSpacing:'0.02em'}}>
+                  <div className="border-2 border-white rounded-full px-8 py-4 text-center text-lg lg:text-2xl font-montreal font-semibold text-white tracking-wide w-full mx-auto" style={{letterSpacing:'0.02em'}}>
                     {t('hero.cta')}
                   </div>
                 </div>
                 <div className="w-full">
-                  <div className="text-lg lg:text-2xl font-tt-lakes font-bold text-white mt-2" style={{letterSpacing:'0.02em'}}>
+                  <div className="text-lg lg:text-2xl font-montreal font-bold text-white mt-2 text-center w-full mx-auto" style={{letterSpacing:'0.02em'}}>
                     {t('hero.start')}
                   </div>
                 </div>

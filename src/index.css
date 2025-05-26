@@ -10,12 +10,24 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/NeueMontreal-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Neue Montreal', Arial, sans-serif;
+}
+
 .font-tt-lakes {
-  font-family: 'TT Lakes Neue DemiBold', 'Montserrat', Arial, sans-serif;
+  font-family: 'TT Lakes Neue DemiBold', 'Neue Montreal', Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'TT Lakes Neue DemiBold', 'Montserrat', Arial, sans-serif;
+  font-family: 'TT Lakes Neue DemiBold', 'Neue Montreal', Arial, sans-serif;
 }
 
 @layer base {
