@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'TT Lakes Neue DemiBold';
+  src: url('/fonts/TT Lakes Neue Trial Extended DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-tt-lakes {
+  font-family: 'TT Lakes Neue DemiBold', 'Montserrat', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'TT Lakes Neue DemiBold', 'Montserrat', Arial, sans-serif;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
