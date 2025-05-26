@@ -67,7 +67,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
-              {t('about.title').replace('Future Tech', `<span className="text-future-tech-accent">Future Tech</span>`)}
+              <span dangerouslySetInnerHTML={{ __html: t('about.title').replace('Future Tech', '<span class="text-future-tech-accent">Future Tech</span>') }} />
             </h2>
             <p className="text-xl text-future-tech-secondary leading-relaxed mb-8 font-montreal">
               {t('about.description')}
@@ -101,7 +101,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
-              {t('target.title').replace('dirigido', `<span className="text-future-tech-accent">dirigido</span>`)}
+              <span dangerouslySetInnerHTML={{ __html: t('target.title').replace('dirigido', '<span class="text-future-tech-accent">dirigido</span>') }} />
             </h2>
             <p className="text-xl text-future-tech-secondary max-w-3xl mx-auto font-montreal">
               {t('target.subtitle')}
@@ -143,12 +143,121 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Technologies Detail Section */}
+      <section id="technologies" className="py-20 bg-future-tech-primary">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
+              <span dangerouslySetInnerHTML={{ __html: t('technologies.title').replace('Tecnologías', '<span class="text-future-tech-accent">Tecnologías</span>') }} />
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* AI Card */}
+            <Card className="bg-gray-800/30 border-gray-700">
+              <CardContent className="p-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <Lightbulb className="h-8 w-8 text-future-tech-accent" />
+                  <h3 className="text-xl font-tt-lakes font-semibold text-white">{t('technologies.ai.title')}</h3>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.ai.health.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.ai.health.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.ai.manufacturing.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.ai.manufacturing.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.ai.logistics.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.ai.logistics.desc')}</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* IoT Card */}
+            <Card className="bg-gray-800/30 border-gray-700">
+              <CardContent className="p-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <Network className="h-8 w-8 text-future-tech-accent" />
+                  <h3 className="text-xl font-tt-lakes font-semibold text-white">{t('technologies.iot.title')}</h3>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.iot.industry.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.iot.industry.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.iot.smartcities.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.iot.smartcities.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.iot.agriculture.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.iot.agriculture.desc')}</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Blockchain Card */}
+            <Card className="bg-gray-800/30 border-gray-700">
+              <CardContent className="p-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <Shield className="h-8 w-8 text-future-tech-accent" />
+                  <h3 className="text-xl font-tt-lakes font-semibold text-white">{t('technologies.blockchain.title')}</h3>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.blockchain.logistics.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.blockchain.logistics.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.blockchain.commerce.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.blockchain.commerce.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.blockchain.energy.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.blockchain.energy.desc')}</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* AR/VR Card */}
+            <Card className="bg-gray-800/30 border-gray-700">
+              <CardContent className="p-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <Eye className="h-8 w-8 text-future-tech-accent" />
+                  <h3 className="text-xl font-tt-lakes font-semibold text-white">{t('technologies.ar-vr.title')}</h3>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.ar-vr.tourism.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.ar-vr.tourism.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.ar-vr.education.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.ar-vr.education.desc')}</p>
+                  </div>
+                  <div>
+                    <h4 className="text-future-tech-accent font-semibold mb-2">{t('technologies.ar-vr.manufacturing.title')}</h4>
+                    <p className="text-future-tech-secondary">{t('technologies.ar-vr.manufacturing.desc')}</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section id="benefits" className="py-20 bg-future-tech-primary">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
-              <span className="text-future-tech-accent">{t('benefits.title').split(' ')[0]}</span> {t('benefits.title').split(' ').slice(1).join(' ')}
+              <span dangerouslySetInnerHTML={{ __html: t('benefits.title').replace('Ejes', '<span class="text-future-tech-accent">Ejes</span>') }} />
             </h2>
           </div>
           
@@ -186,7 +295,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
-              Catalunya: <span className="text-future-tech-accent">{t('catalunya.title').split(': ')[1]}</span>
+              Catalunya: <span dangerouslySetInnerHTML={{ __html: t('catalunya.title').replace('Hub', '<span class="text-future-tech-accent">Hub</span>') }} />
             </h2>
             <p className="text-xl text-future-tech-secondary leading-relaxed font-montreal">
               {t('catalunya.description')}
@@ -203,7 +312,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
-              <span className="text-future-tech-accent">{t('dates.title').split(' ')[0]} {t('dates.title').split(' ')[1]}</span> {t('dates.title').split(' ').slice(2).join(' ')}
+              <span dangerouslySetInnerHTML={{ __html: t('dates.title').replace('Convocatoria', '<span class="text-future-tech-accent">Convocatoria</span>') }} />
             </h2>
           </div>
           

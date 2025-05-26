@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
@@ -21,6 +20,7 @@ const Header = () => {
     { label: t('nav.inicio'), id: "hero" },
     { label: t('nav.que-es'), id: "about" },
     { label: t('nav.dirigido'), id: "target" },
+    { label: t('nav.technologies'), id: "technologies" },
     { label: t('nav.beneficios'), id: "benefits" },
     { label: t('nav.catalunya'), id: "catalunya" },
     { label: t('nav.fechas'), id: "dates" },
