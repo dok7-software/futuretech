@@ -15,7 +15,7 @@ const HeroDesktop = ({ onApplyClick }: { onApplyClick: () => void }) => {
           opacity: 0.8
         }}
       ></div>
-      <div className="absolute inset-0 bg-gradient-to-br from-future-tech-primary/80 via-purple-900/40 to-black/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-future-tech-primary/80 via-blue-900/20 to-black/70"></div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4">
           {/* Columna izquierda: textos y logos */}
@@ -24,7 +24,7 @@ const HeroDesktop = ({ onApplyClick }: { onApplyClick: () => void }) => {
             <p className="text-2xl lg:text-3xl italic text-future-tech-secondary font-montreal text-center w-full">{t('hero.subtitle')}</p>
             <div className="w-full flex flex-col gap-4">
               <div className="w-full">
-                <div className="border-2 border-white rounded-full px-8 py-4 text-center text-lg lg:text-2xl font-montreal font-semibold text-white tracking-wide w-full" style={{letterSpacing:'0.02em'}}>
+                <div className="border-2 border-future-tech-accent rounded-full px-8 py-4 text-center text-lg lg:text-2xl font-montreal font-semibold text-white tracking-wide w-full" style={{letterSpacing:'0.02em'}}>
                   {t('hero.cta')}
                 </div>
               </div>

@@ -49,7 +49,7 @@ const HeroMobile = () => {
           <h1 className="hero-mobile-title font-tt-lakes font-bold text-future-tech-accent text-center mb-2">{t('hero.title')}</h1>
           <p className="hero-mobile-subtitle font-montreal text-center mb-4">{t('hero.subtitle')}</p>
           <div className="w-full flex flex-col items-center gap-3">
-            <div className="rounded-full border-2 border-white px-4 py-2 text-center text-sm font-montreal font-semibold text-white bg-black/60 tracking-wide" style={{letterSpacing:'0.02em'}}>{t('hero.cta')}</div>
+            <div className="rounded-full border-2 border-future-tech-accent px-4 py-2 text-center text-sm font-montreal font-semibold text-white bg-black/60 tracking-wide" style={{letterSpacing:'0.02em'}}>{t('hero.cta')}</div>
             <div className="text-sm font-montreal font-bold text-white text-center w-full" style={{letterSpacing:'0.02em'}}>{t('hero.start')}</div>
           </div>
         </div>
