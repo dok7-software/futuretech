@@ -41,7 +41,7 @@ const Header = ({ onApplyClick }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-xl font-tt-lakes font-bold text-future-tech-accent">
+            <h1 className="text-xl font-tt-lakes font-bold text-future-tech-accent uppercase">
               Future Tech
             </h1>
           </div>
@@ -90,7 +90,7 @@ const Header = ({ onApplyClick }) => {
             ))}
             <Button 
               size="sm" 
-              className="bg-future-tech-accent text-future-tech-primary hover:bg-future-tech-accent/90 font-tt-lakes font-semibold ml-4"
+              className="bg-future-tech-accent text-future-tech-primary hover:bg-future-tech-accent/90 font-tt-lakes font-semibold ml-4 min-w-[120px]"
               onClick={onApplyClick}
             >
               {t('header.apply')}
@@ -151,7 +151,7 @@ const Header = ({ onApplyClick }) => {
               </div>
               <Button 
                 size="sm" 
-                className="bg-future-tech-accent text-future-tech-primary hover:bg-future-tech-accent/90 font-tt-lakes font-semibold w-fit"
+                className="bg-future-tech-accent text-future-tech-primary hover:bg-future-tech-accent/90 font-tt-lakes font-semibold w-fit min-w-[120px]"
                 onClick={onApplyClick}
               >
                 {t('header.apply')}
