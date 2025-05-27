@@ -43,7 +43,7 @@ const HeroDesktop = ({ onApplyClick }: { onApplyClick: () => void }) => {
                     <span className="text-xs md:text-sm font-semibold text-white mb-1">{t('logos.financat')}</span>
                     <div className="flex gap-4 items-end">
                       <img src="/lovable-uploads/cofinanciado%20por%20la%20union%20europea.png" alt="Cofinanciado por la Unión Europea" className="h-14 md:h-16 object-contain" style={{maxWidth:'180px'}} />
-                      <img src="/lovable-uploads/logo%20generaliltat%20catalunya%20blanco.png" alt="Generalitat de Catalunya" className="h-12 md:h-14 object-contain" style={{maxWidth:'220px'}} />
+                      <img src="/lovable-uploads/logo%20generaliltat%20catalunya%20blanco.png" alt="Generalitat de Catalunya" className="h-10 md:h-12 object-contain" style={{maxWidth:'180px'}} />
                     </div>
                   </div>
                   {/* Columna 2: Programa de */}

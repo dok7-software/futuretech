@@ -35,21 +35,21 @@ const Index = () => {
               {t('about.description')}
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-12">
-              <Card className="bg-gray-800/50 border-gray-700">
+              <Card className="bg-gray-800/50 border-gray-700 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 bg-future-tech-accent rounded-full flex items-center justify-center mx-auto mb-4">
                     <Network className="h-8 w-8 text-future-tech-primary" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-white">22@Network</h3>
+                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-white group-hover:text-future-tech-accent transition-colors">22@Network</h3>
                   <p className="text-future-tech-secondary font-montreal">{t('about.22network')}</p>
                 </CardContent>
               </Card>
-              <Card className="bg-gray-800/50 border-gray-700">
+              <Card className="bg-gray-800/50 border-gray-700 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 bg-future-tech-accent rounded-full flex items-center justify-center mx-auto mb-4">
                     <Globe className="h-8 w-8 text-future-tech-primary" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-white">Cambra de Comerç Barcelona</h3>
+                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-white group-hover:text-future-tech-accent transition-colors">Cambra de Comerç Barcelona</h3>
                   <p className="text-future-tech-secondary font-montreal">{t('about.cambra')}</p>
                 </CardContent>
               </Card>
@@ -76,11 +76,11 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* AI Card */}
-            <Card className="bg-gray-800/30 border-gray-700">
+            <Card className="bg-gray-800/30 border-gray-700 hover:border-future-tech-accent transition-all duration-300 group">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Lightbulb className="h-8 w-8 text-future-tech-accent" />
-                  <h3 className="text-xl font-tt-lakes font-semibold text-white">{t('technologies.ai.title')}</h3>
+                  <Lightbulb className="h-8 w-8 text-future-tech-accent group-hover:text-future-tech-accent transition-colors" />
+                  <h3 className="text-xl font-tt-lakes font-semibold text-white group-hover:text-future-tech-accent transition-colors">{t('technologies.ai.title')}</h3>
                 </div>
                 <div className="space-y-4">
                   <div>
@@ -100,11 +100,11 @@ const Index = () => {
             </Card>
 
             {/* IoT Card */}
-            <Card className="bg-gray-800/30 border-gray-700">
+            <Card className="bg-gray-800/30 border-gray-700 hover:border-future-tech-accent transition-all duration-300 group">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Network className="h-8 w-8 text-future-tech-accent" />
-                  <h3 className="text-xl font-tt-lakes font-semibold text-white">{t('technologies.iot.title')}</h3>
+                  <Network className="h-8 w-8 text-future-tech-accent group-hover:text-future-tech-accent transition-colors" />
+                  <h3 className="text-xl font-tt-lakes font-semibold text-white group-hover:text-future-tech-accent transition-colors">{t('technologies.iot.title')}</h3>
                 </div>
                 <div className="space-y-4">
                   <div>
@@ -124,11 +124,11 @@ const Index = () => {
             </Card>
 
             {/* Blockchain Card */}
-            <Card className="bg-gray-800/30 border-gray-700">
+            <Card className="bg-gray-800/30 border-gray-700 hover:border-future-tech-accent transition-all duration-300 group">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Shield className="h-8 w-8 text-future-tech-accent" />
-                  <h3 className="text-xl font-tt-lakes font-semibold text-white">{t('technologies.blockchain.title')}</h3>
+                  <Shield className="h-8 w-8 text-future-tech-accent group-hover:text-future-tech-accent transition-colors" />
+                  <h3 className="text-xl font-tt-lakes font-semibold text-white group-hover:text-future-tech-accent transition-colors">{t('technologies.blockchain.title')}</h3>
                 </div>
                 <div className="space-y-4">
                   <div>
@@ -148,11 +148,11 @@ const Index = () => {
             </Card>
 
             {/* AR/VR Card */}
-            <Card className="bg-gray-800/30 border-gray-700">
+            <Card className="bg-gray-800/30 border-gray-700 hover:border-future-tech-accent transition-all duration-300 group">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Eye className="h-8 w-8 text-future-tech-accent" />
-                  <h3 className="text-xl font-tt-lakes font-semibold text-white">{t('technologies.ar-vr.title')}</h3>
+                  <Eye className="h-8 w-8 text-future-tech-accent group-hover:text-future-tech-accent transition-colors" />
+                  <h3 className="text-xl font-tt-lakes font-semibold text-white group-hover:text-future-tech-accent transition-colors">{t('technologies.ar-vr.title')}</h3>
                 </div>
                 <div className="space-y-4">
                   <div>
@@ -304,10 +304,10 @@ const Index = () => {
             <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
               <span className="text-future-tech-accent">{t('contact.title')}</span>
             </h2>
-            <Card className="bg-gray-800/30 border-gray-700">
+            <Card className="bg-gray-800/30 border-gray-700 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
               <CardContent className="p-8">
-                <Mail className="h-12 w-12 text-future-tech-accent mx-auto mb-6" />
-                <h3 className="text-xl font-tt-lakes font-semibold text-white mb-4">{t('contact.secretary')}</h3>
+                <Mail className="h-12 w-12 text-future-tech-accent mx-auto mb-6 group-hover:text-future-tech-accent transition-colors" />
+                <h3 className="text-xl font-tt-lakes font-semibold text-white mb-4 group-hover:text-future-tech-accent transition-colors">{t('contact.secretary')}</h3>
                 <a 
                   href="mailto:secretariatecnica@22network.net" 
                   className="text-future-tech-accent hover:text-future-tech-accent/80 text-lg font-montreal font-medium transition-colors"
