@@ -66,7 +66,7 @@ const HeroDesktop = ({ onApplyClick }: { onApplyClick: () => void }) => {
             <div className="relative">
               <div className="absolute inset-0 bg-future-tech-accent/20 rounded-full blur-3xl animate-pulse"></div>
               <img 
-                src="/lovable-uploads/robot future tech.png" 
+                src="/lovable-uploads/robot future tech2.png" 
                 alt="Future Tech AI" 
                 className="relative z-10 max-w-md lg:max-w-lg w-full h-auto"
               />
