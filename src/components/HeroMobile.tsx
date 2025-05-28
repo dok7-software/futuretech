@@ -4,13 +4,13 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const HeroMobile = () => {
   const { t } = useLanguage();
   return (
-    <section className="relative w-full flex flex-col justify-start bg-black text-white overflow-hidden pt-16 pb-0">
+    <section className="relative w-full flex flex-col justify-start bg-via-blue-900/20 text-white overflow-hidden pt-16 pb-0">
       {/* Onda decorativa superior */}
       <img 
         src="/lovable-uploads/Onda Amarillo Lima 1.png" 
         alt="Onda amarilla" 
-        className="absolute top-[230px] left-0 w-full h-24 object-cover z-10 pointer-events-none select-none"
-        style={{maxHeight: '110px'}}
+        className="absolute top-[200px] left-0 w-full object-contain z-10 pointer-events-none select-none bg-via-blue-900/10"
+        style={{height: 'auto'}}
       />
       {/* Zona superior: bloques uno debajo del otro, centrados */}
       <div className="relative z-20 pl-4 pt-6 flex flex-col w-full gap-4 items-center">
