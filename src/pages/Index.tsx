@@ -35,22 +35,44 @@ const Index = () => {
               {t('about.description')}
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-12">
-              <Card className="bg-gray-800/50 border-gray-700 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
+              {/* 22@Network */}
+              <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-future-tech-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Network className="h-8 w-8 text-future-tech-primary" />
+                  <div className="flex items-center justify-center mx-auto mb-4">
+                    <img src="/lovable-uploads/Logo color 22Network.png" alt="22@Network Barcelona" className="h-10 object-contain" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-white group-hover:text-future-tech-accent transition-colors">22@Network</h3>
-                  <p className="text-future-tech-secondary font-montreal">{t('about.22network')}</p>
+                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black group-hover:text-future-tech-accent transition-colors">22@Network</h3>
+                  <p className="text-black font-montreal">{t('about.22network')}</p>
                 </CardContent>
               </Card>
-              <Card className="bg-gray-800/50 border-gray-700 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
+              {/* Cambra de Comerç Barcelona */}
+              <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-future-tech-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Globe className="h-8 w-8 text-future-tech-primary" />
+                  <div className="flex items-center justify-center mx-auto mb-4">
+                    <img src="/lovable-uploads/Logo color Cambra de comercio barcelona.png" alt="Cambra de Comerç Barcelona" className="h-10 object-contain" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-white group-hover:text-future-tech-accent transition-colors">Cambra de Comerç Barcelona</h3>
-                  <p className="text-future-tech-secondary font-montreal">{t('about.cambra')}</p>
+                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black group-hover:text-future-tech-accent transition-colors">Cambra de Comerç Barcelona</h3>
+                  <p className="text-black font-montreal">{t('about.cambra')}</p>
+                </CardContent>
+              </Card>
+              {/* Unión Europea */}
+              <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
+                <CardContent className="p-6 text-center">
+                  <div className="flex items-center justify-center mx-auto mb-4">
+                    <img src="/lovable-uploads/Logo Color Union europea.png" alt="Unión Europea" className="h-10 object-contain" />
+                  </div>
+                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black group-hover:text-future-tech-accent transition-colors">Unión Europea</h3>
+                  <p className="text-black font-montreal">{t('about.eu-support')}</p>
+                </CardContent>
+              </Card>
+              {/* Generalitat de Catalunya */}
+              <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
+                <CardContent className="p-6 text-center">
+                  <div className="flex items-center justify-center mx-auto mb-4">
+                    <img src="/lovable-uploads/Logo Color Generalitat de Catalunya.png" alt="Generalitat de Catalunya" className="h-10 object-contain" />
+                  </div>
+                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black group-hover:text-future-tech-accent transition-colors">Generalitat de Catalunya</h3>
+                  <p className="text-black font-montreal">{t('about.gencat-support')}</p>
                 </CardContent>
               </Card>
             </div>
@@ -307,12 +329,12 @@ const Index = () => {
             <Card className="bg-gray-800/30 border-gray-700 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
               <CardContent className="p-8">
                 <Mail className="h-12 w-12 text-future-tech-accent mx-auto mb-6 group-hover:text-future-tech-accent transition-colors" />
-                <h3 className="text-xl font-tt-lakes font-semibold text-white mb-4 group-hover:text-future-tech-accent transition-colors">{t('contact.secretary')}</h3>
+                <h3 className="text-xl font-tt-lakes font-semibold text-white mb-4 group-hover:text-future-tech-accent transition-colors">{t('contact.title')}</h3>
                 <a 
-                  href="mailto:secretariatecnica@22network.net" 
+                  href="mailto:info@futuretech.cat" 
                   className="text-future-tech-accent hover:text-future-tech-accent/80 text-lg font-montreal font-medium transition-colors"
                 >
-                  secretariatecnica@22network.net
+                  info@futuretech.cat
                 </a>
               </CardContent>
             </Card>

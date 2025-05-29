@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
-import { Menu, X, Linkedin, Instagram, Facebook } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header = ({ onApplyClick }) => {
@@ -23,12 +23,6 @@ const Header = ({ onApplyClick }) => {
     { label: t('nav.beneficios'), id: "benefits" },
     { label: t('nav.fechas'), id: "dates" },
     { label: t('nav.contacto'), id: "contact" }
-  ];
-
-  const socialLinks = [
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: Facebook, href: "https://facebook.com", label: "Facebook" }
   ];
 
   const handleLanguageToggle = (checked: boolean) => {
@@ -59,7 +53,7 @@ const Header = ({ onApplyClick }) => {
             ))}
           </nav>
 
-          {/* Language Switch, Social Links & CTA */}
+          {/* Language Switch & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
             {/* Language Toggle */}
             <div className="flex items-center space-x-2 mr-2">
@@ -76,18 +70,6 @@ const Header = ({ onApplyClick }) => {
               </span>
             </div>
 
-            {socialLinks.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-future-tech-secondary hover:text-future-tech-accent transition-colors"
-                aria-label={social.label}
-              >
-                <social.icon className="h-5 w-5" />
-              </a>
-            ))}
             <Button 
               size="sm" 
               className="bg-future-tech-accent text-future-tech-primary hover:bg-future-tech-accent/90 font-tt-lakes font-semibold ml-4 min-w-[120px]"
@@ -135,20 +117,6 @@ const Header = ({ onApplyClick }) => {
                   {item.label}
                 </button>
               ))}
-              <div className="flex items-center space-x-4 pt-4 border-t border-gray-700">
-                {socialLinks.map((social) => (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-future-tech-secondary hover:text-future-tech-accent transition-colors"
-                    aria-label={social.label}
-                  >
-                    <social.icon className="h-5 w-5" />
-                  </a>
-                ))}
-              </div>
               <Button 
                 size="sm" 
                 className="bg-future-tech-accent text-future-tech-primary hover:bg-future-tech-accent/90 font-tt-lakes font-semibold w-fit min-w-[120px]"

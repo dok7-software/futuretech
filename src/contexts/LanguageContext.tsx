@@ -44,6 +44,8 @@ const translations = {
     'about.description': 'El programa conecta startups con formación especializada, mentorías y entornos de validación real, favoreciendo alianzas estratégicas y crecimiento.',
     'about.22network': 'Ecosistema de innovación líder en Europa',
     'about.cambra': 'Impulsando el tejido empresarial catalán',
+    'about.eu-support': 'Financia el programa junto a la Generalitat',
+    'about.gencat-support': 'Financia el programa junto a la Unión Europea',
     
     // Target Section
     'target.title': '¿A quién va dirigido?',
@@ -85,7 +87,7 @@ const translations = {
     
     // Contact Section
     'contact.title': 'Contacto',
-    'contact.secretary': 'Secretaría Técnica',
+    'contact.secretary': 'info@futuretech.cat',
     
     // Footer
     'footer.copyright': '© 2025 Future Tech - 22@Network x Cambra de Comerç de Barcelona',
@@ -131,7 +133,7 @@ const translations = {
 
     // Formulario multipaso Future Tech
     'form.intro.title': 'Programa Future Tech',
-    'form.intro.text': 'Future Tech es un programa innovador creado por 22@Network Barcelona, en colaboración con Cambra de Comerç de Barcelona, para acelerar la adopción de tecnologías exponenciales y disruptivas en Cataluña. El programa conecta startups con formación especializada, mentorías y entornos de validación real, favoreciendo alianzas estratégicas y crecimiento.',
+    'form.intro.text': 'Future Tech és un programa innovador creat per 22@Network Barcelona, en col·laboració amb Cambra de Comerç de Barcelona, per accelerar l\'adopció de tecnologies exponencials i disruptives a Catalunya. El programa connecta startups amb formació especialitzada, mentories i entorns de validació real, afavorint aliances estratègiques i creixement.',
     'form.intro.start': 'Comenzar',
     'form.email': 'Correo electrónico',
     'form.name': 'Nombre y apellido',
@@ -164,9 +166,9 @@ const translations = {
     'form.required': 'Este campo es obligatorio',
     'form.email.invalid': 'Por favor ingresa un email válido',
     'form.phone.invalid': 'Por favor ingresa un teléfono válido',
-    'form.file.invalid': 'Solo se permiten archivos PDF o PPT.',
-    'form.file.size': 'El archivo supera el tamaño máximo de 10MB.',
-    'form.file.required': 'Por favor sube un archivo'
+    'form.file.invalid': 'Només es permeten arxius PDF o PPT.',
+    'form.file.size': 'L\'arxiu supera la mida màxima de 10MB.',
+    'form.file.required': 'Si us plau, puja un arxiu'
   },
   ca: {
     // Header
@@ -192,6 +194,8 @@ const translations = {
     'about.description': 'El programa connecta startups amb formació especialitzada, mentories i entorns de validació real, afavorint aliances estratègiques i creixement.',
     'about.22network': 'Ecosistema d\'innovació líder a Europa',
     'about.cambra': 'Impulsant el teixit empresarial català',
+    'about.eu-support': 'Finança el programa juntament amb la Generalitat',
+    'about.gencat-support': 'Finança el programa juntament amb la Unió Europea',
     
     // Target Section
     'target.title': 'A qui va dirigit?',
@@ -233,7 +237,7 @@ const translations = {
     
     // Contact Section
     'contact.title': 'Contacte',
-    'contact.secretary': 'Secretaria Tècnica',
+    'contact.secretary': 'info@futuretech.cat',
     
     // Footer
     'footer.copyright': '© 2025 Future Tech - 22@Network x Cambra de Comerç de Barcelona',
@@ -279,7 +283,7 @@ const translations = {
 
     // Formulario multipaso Future Tech
     'form.intro.title': 'Programa Future Tech',
-    'form.intro.text': 'Future Tech és un programa innovador creat per 22@Network Barcelona, en col·laboració amb Cambra de Comerç de Barcelona, per accelerar l’adopció de tecnologies exponencials i disruptives a Catalunya. El programa connecta startups amb formació especialitzada, mentories i entorns de validació real, afavorint aliances estratègiques i creixement.',
+    'form.intro.text': 'Future Tech és un programa innovador creat per 22@Network Barcelona, en col·laboració amb Cambra de Comerç de Barcelona, per accelerar l\'adopció de tecnologies exponencials i disruptives a Catalunya. El programa connecta startups amb formació especialitzada, mentories i entorns de validació real, afavorint aliances estratègiques i creixement.',
     'form.intro.start': 'Començar',
     'form.email': 'Correu electrònic',
     'form.name': 'Nom i cognom',
@@ -313,7 +317,7 @@ const translations = {
     'form.email.invalid': 'Si us plau, introdueix un correu electrònic vàlid',
     'form.phone.invalid': 'Si us plau, introdueix un telèfon vàlid',
     'form.file.invalid': 'Només es permeten arxius PDF o PPT.',
-    'form.file.size': 'L’arxiu supera la mida màxima de 10MB.',
+    'form.file.size': 'L\'arxiu supera la mida màxima de 10MB.',
     'form.file.required': 'Si us plau, puja un arxiu'
   }
 };

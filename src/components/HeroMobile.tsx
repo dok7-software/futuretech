@@ -18,16 +18,16 @@ const HeroMobile = () => {
         <div className="flex flex-col items-center">
           <span className="text-xs font-bold leading-tight mb-1">PROGRAMA DE:</span>
           <div className="flex gap-3 items-center">
-            <img src="/lovable-uploads/logo 22 network azul fondo blanco.png" alt="22@Network Barcelona" className="h-6 object-contain" />
-            <img src="/lovable-uploads/logo cambra comerc barcelona.png" alt="Cambra de Comerç Barcelona" className="h-6 object-contain" />
+            <img src="/lovable-uploads/Logo 22Network.png" alt="22@Network Barcelona" className="h-12 object-contain" />
+            <img src="/lovable-uploads/Logo Cambra de Comercio de Barcelona.png" alt="Cambra de Comerç Barcelona" className="h-12 object-contain" />
           </div>
         </div>
         {/* Bloque Finançat per */}
         <div className="flex flex-col items-center mt-2">
           <span className="text-xs font-bold leading-tight mb-1">FINANÇAT PER:</span>
           <div className="flex gap-3 items-center">
-            <img src="/lovable-uploads/cofinanciado por la union europea.png" alt="UE" className="h-6 object-contain" />
-            <img src="/lovable-uploads/logo generaliltat catalunya blanco.png" alt="Generalitat" className="h-6 object-contain" />
+            <img src="/lovable-uploads/Logo Union europea.png" alt="UE" className="h-12 object-contain" />
+            <img src="/lovable-uploads/Logo Generalitat de Catalunya.png" alt="Generalitat" className="h-8 object-contain" />
           </div>
           <span className="block text-[9px] text-center leading-tight mt-2 max-w-[240px]">Finançat pel Departament d'Empresa i Treball de la Generalitat de Catalunya i cofinançat pel Fons Social Europeu Plus</span>
         </div>

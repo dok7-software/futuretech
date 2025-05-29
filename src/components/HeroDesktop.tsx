@@ -42,16 +42,16 @@ const HeroDesktop = ({ onApplyClick }: { onApplyClick: () => void }) => {
                   <div className="flex flex-col items-start gap-2">
                     <span className="text-xs md:text-sm font-semibold text-white mb-1">{t('logos.financat')}</span>
                     <div className="flex gap-4 items-end">
-                      <img src="/lovable-uploads/cofinanciado%20por%20la%20union%20europea.png" alt="Cofinanciado por la Unión Europea" className="h-14 md:h-16 object-contain" style={{maxWidth:'180px'}} />
-                      <img src="/lovable-uploads/logo%20generaliltat%20catalunya%20blanco.png" alt="Generalitat de Catalunya" className="h-10 md:h-12 object-contain" style={{maxWidth:'180px'}} />
+                      <img src="/lovable-uploads/Logo Union europea.png" alt="Cofinanciado por la Unión Europea" className="h-20 md:h-24 object-contain" style={{maxWidth:'220px'}} />
+                      <img src="/lovable-uploads/Logo Generalitat de Catalunya.png" alt="Generalitat de Catalunya" className="h-14 md:h-16 object-contain translate-y-[-16px]" style={{maxWidth:'180px'}} />
                     </div>
                   </div>
                   {/* Columna 2: Programa de */}
                   <div className="flex flex-col items-start gap-2">
                     <span className="text-xs md:text-sm font-semibold text-white mb-1">{t('logos.programa')}</span>
                     <div className="flex gap-4 items-end">
-                      <img src="/lovable-uploads/logo%2022%20network%20azul%20fondo%20blanco.png" alt="22@Network Barcelona" className="h-12 md:h-14 object-contain" style={{maxWidth:'140px'}} />
-                      <img src="/lovable-uploads/logo%20cambra%20comerc%20barcelona.png" alt="Cambra de Comerç Barcelona" className="h-12 md:h-14 object-contain" style={{maxWidth:'140px'}} />
+                      <img src="/lovable-uploads/Logo 22Network.png" alt="22@Network Barcelona" className="h-20 md:h-24 object-contain" style={{maxWidth:'180px'}} />
+                      <img src="/lovable-uploads/Logo Cambra de Comercio de Barcelona.png" alt="Cambra de Comerç Barcelona" className="h-20 md:h-24 object-contain" style={{maxWidth:'180px'}} />
                     </div>
                   </div>
                 </div>
