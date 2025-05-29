@@ -41,7 +41,7 @@ const Index = () => {
                   <div className="flex items-center justify-center mx-auto mb-4">
                     <img src="/lovable-uploads/Logo color 22Network.png" alt="22@Network Barcelona" className="h-10 object-contain" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black group-hover:text-future-tech-accent transition-colors">22@Network</h3>
+                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black transition-colors">22@Network</h3>
                   <p className="text-black font-montreal">{t('about.22network')}</p>
                 </CardContent>
               </Card>
@@ -51,7 +51,7 @@ const Index = () => {
                   <div className="flex items-center justify-center mx-auto mb-4">
                     <img src="/lovable-uploads/Logo color Cambra de comercio barcelona.png" alt="Cambra de Comerç Barcelona" className="h-10 object-contain" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black group-hover:text-future-tech-accent transition-colors">Cambra de Comerç Barcelona</h3>
+                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black transition-colors">Cambra de Comerç Barcelona</h3>
                   <p className="text-black font-montreal">{t('about.cambra')}</p>
                 </CardContent>
               </Card>
@@ -61,7 +61,7 @@ const Index = () => {
                   <div className="flex items-center justify-center mx-auto mb-4">
                     <img src="/lovable-uploads/Logo Color Union europea.png" alt="Unión Europea" className="h-10 object-contain" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black group-hover:text-future-tech-accent transition-colors">Unión Europea</h3>
+                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black transition-colors">Unión Europea</h3>
                   <p className="text-black font-montreal">{t('about.eu-support')}</p>
                 </CardContent>
               </Card>
@@ -71,7 +71,7 @@ const Index = () => {
                   <div className="flex items-center justify-center mx-auto mb-4">
                     <img src="/lovable-uploads/Logo Color Generalitat de Catalunya.png" alt="Generalitat de Catalunya" className="h-10 object-contain" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black group-hover:text-future-tech-accent transition-colors">Generalitat de Catalunya</h3>
+                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black transition-colors">Generalitat de Catalunya</h3>
                   <p className="text-black font-montreal">{t('about.gencat-support')}</p>
                 </CardContent>
               </Card>
