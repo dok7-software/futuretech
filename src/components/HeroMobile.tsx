@@ -13,23 +13,25 @@ const HeroMobile = () => {
         style={{height: 'auto'}}
       />
       {/* Zona superior: bloques uno debajo del otro, centrados */}
-      <div className="relative z-20 pl-4 pt-6 flex flex-col w-full gap-4 items-center">
+      <div className="relative z-20 px-4 pt-6 flex flex-col w-full gap-4 items-center">
         {/* Bloque Programa de */}
         <div className="flex flex-col items-center">
-          <span className="text-xs font-bold leading-tight mb-1">PROGRAMA DE:</span>
+          <span className="text-xs font-bold leading-tight mb-1">{t('logos.programa')}</span>
           <div className="flex gap-3 items-center">
-            <img src="/lovable-uploads/Logo 22Network.png" alt="22@Network Barcelona" className="h-12 object-contain" />
-            <img src="/lovable-uploads/Logo Cambra de Comercio de Barcelona.png" alt="Cambra de Comerç Barcelona" className="h-12 object-contain" />
+            <img src="/lovable-uploads/Logo 22Network.png" alt="22@Network Barcelona" className="h-10 object-contain" style={{maxWidth: '120px'}} />
+            <img src="/lovable-uploads/Logo Cambra de Comercio de Barcelona.png" alt="Cambra de Comerç Barcelona" className="h-10 object-contain" style={{maxWidth: '120px'}} />
           </div>
         </div>
         {/* Bloque Finançat per */}
         <div className="flex flex-col items-center mt-2">
-          <span className="text-xs font-bold leading-tight mb-1">FINANÇAT PER:</span>
+          <span className="text-xs font-bold leading-tight mb-1">{t('logos.financat')}</span>
           <div className="flex gap-3 items-center">
-            <img src="/lovable-uploads/Logo Union europea.png" alt="UE" className="h-12 object-contain" />
-            <img src="/lovable-uploads/Logo Generalitat de Catalunya.png" alt="Generalitat" className="h-8 object-contain" />
+            <img src="/lovable-uploads/Logo Union europea.png" alt="UE" className="h-10 object-contain" style={{maxWidth: '120px'}} />
+            <img src="/lovable-uploads/Logo Generalitat de Catalunya.png" alt="Generalitat" className="h-8 object-contain" style={{maxWidth: '100px'}} />
           </div>
-          <span className="block text-[9px] text-center leading-tight mt-2 max-w-[240px]">Finançat pel Departament d'Empresa i Treball de la Generalitat de Catalunya i cofinançat pel Fons Social Europeu Plus</span>
+          <span className="block text-[10px] text-center leading-tight mt-2 max-w-[280px] font-montreal">
+            {t('logos.leyenda')}
+          </span>
         </div>
       </div>
       {/* Zona central: contenido principal y robot alineados */}

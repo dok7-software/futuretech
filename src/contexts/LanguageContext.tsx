@@ -95,7 +95,7 @@ const translations = {
     // Logos Bar
     'logos.financat': 'FINANCIADO POR:',
     'logos.programa': 'PROGRAMA DE:',
-    'logos.leyenda': "Financiado por el Departament d'Empresa i Treball de la Generalitat de Catalunya y cofinançat pel Fons Social Europeu Plus",
+    'logos.leyenda': "Financiado por el Departamento de Empresa y Trabajo de la Generalitat de Cataluña y cofinanciado por el Fondo Social Europeo Plus",
     
     // Technologies Section
     'technologies.title': 'Tecnologías Clave e Impacto Sectorial',
