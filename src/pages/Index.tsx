@@ -35,13 +35,15 @@ const Index = () => {
               {t('about.description')}
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-12">
+              <div className="col-span-2">
+                <p className="text-white font-tt-lakes text-center mb-6">{t('logos.programa')}</p>
+              </div>
               {/* 22@Network */}
               <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
                 <CardContent className="p-6 text-center">
                   <div className="flex items-center justify-center mx-auto mb-4">
                     <img src="/lovable-uploads/Logo color 22Network.png" alt="22@Network Barcelona" className="h-10 object-contain" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black transition-colors">22@Network</h3>
                   <p className="text-black font-montreal">{t('about.22network')}</p>
                 </CardContent>
               </Card>
@@ -51,17 +53,18 @@ const Index = () => {
                   <div className="flex items-center justify-center mx-auto mb-4">
                     <img src="/lovable-uploads/Logo color Cambra de comercio barcelona.png" alt="Cambra de Comerç Barcelona" className="h-10 object-contain" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black transition-colors">Cambra de Comerç Barcelona</h3>
                   <p className="text-black font-montreal">{t('about.cambra')}</p>
                 </CardContent>
               </Card>
+              <div className="col-span-2">
+                <p className="text-white font-tt-lakes text-center mb-6">{t('logos.financat')}</p>
+              </div>
               {/* Unión Europea */}
               <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
                 <CardContent className="p-6 text-center">
                   <div className="flex items-center justify-center mx-auto mb-4">
                     <img src="/lovable-uploads/Logo Color Union europea.png" alt="Unión Europea" className="h-10 object-contain" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black transition-colors">Unión Europea</h3>
                   <p className="text-black font-montreal">{t('about.eu-support')}</p>
                 </CardContent>
               </Card>
@@ -71,10 +74,14 @@ const Index = () => {
                   <div className="flex items-center justify-center mx-auto mb-4">
                     <img src="/lovable-uploads/Logo Color Generalitat de Catalunya.png" alt="Generalitat de Catalunya" className="h-10 object-contain" />
                   </div>
-                  <h3 className="text-xl font-tt-lakes font-semibold mb-2 text-black transition-colors">Generalitat de Catalunya</h3>
                   <p className="text-black font-montreal">{t('about.gencat-support')}</p>
                 </CardContent>
               </Card>
+              <div className="col-span-2">
+                <p className="text-white font-montreal text-center text-base mt-4">
+                  {t('logos.leyenda')}
+                </p>
+              </div>
             </div>
           </div>
         </div>
