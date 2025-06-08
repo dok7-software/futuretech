@@ -55,9 +55,6 @@ const HeroDesktop = ({ onApplyClick }: { onApplyClick: () => void }) => {
                     </div>
                   </div>
                 </div>
-                <span className="text-xs md:text-sm text-white mt-3 font-montreal" style={{maxWidth:'600px'}}>
-                  {t('logos.leyenda')}
-                </span>
               </div>
             </div>
           </div>

@@ -44,12 +44,14 @@ const translations = {
     'about.description': 'El programa conecta startups con formación especializada, mentorías y entornos de validación real, favoreciendo alianzas estratégicas y crecimiento.',
     'about.22network': 'Ecosistema de innovación líder en Europa',
     'about.cambra': 'Impulsando el tejido empresarial catalán',
+    'about.cambra.slogan': 'Capacitamos, acompañamos y conectamos empresas',
     'about.eu-support': 'Financia el programa junto a la Generalitat',
     'about.gencat-support': 'Financia el programa junto a la Unión Europea',
     
     // Target Section
     'target.title': '¿A quién va dirigido?',
     'target.subtitle': 'El programa de preaceleración Future Tech está dirigido a startups en fase inicial que desarrollan soluciones con tecnologías como la IA, IoT, blockchain y AR/VR. Está pensado para equipos que quieran validar su MVP en entornos reales, acceder a mentorías expertas y conectar con el ecosistema empresarial e inversor.',
+    'target.location': 'Programa enfocado a proyectos de Cataluña',
     'target.technologies': 'Tecnologías Clave',
     'target.sectors': 'Sectores de Impacto',
     'target.ai': 'Inteligencia Artificial',
@@ -99,6 +101,7 @@ const translations = {
     
     // Technologies Section
     'technologies.title': 'Tecnologías Clave e Impacto Sectorial',
+    'technologies.claim': '¿Eres una startup en fase early stage, pre-seed o seed? Presenta tu proyecto en alguna de las siguientes verticales.',
     'technologies.ai.title': 'Inteligencia Artificial (IA)',
     'technologies.ai.health.title': 'Salud',
     'technologies.ai.health.desc': 'Diagnóstico clínico, tratamientos personalizados',
@@ -194,12 +197,14 @@ const translations = {
     'about.description': 'El programa connecta startups amb formació especialitzada, mentories i entorns de validació real, afavorint aliances estratègiques i creixement.',
     'about.22network': 'Ecosistema d\'innovació líder a Europa',
     'about.cambra': 'Impulsant el teixit empresarial català',
+    'about.cambra.slogan': 'Capacitem, acompanyem i connectem empreses',
     'about.eu-support': 'Finança el programa juntament amb la Generalitat',
     'about.gencat-support': 'Finança el programa juntament amb la Unió Europea',
     
     // Target Section
     'target.title': 'A qui va dirigit?',
     'target.subtitle': 'El programa de preacceleració Future Tech està dirigit a startups en fase inicial que desenvolupen solucions amb tecnologies com la IA, IoT, blockchain i AR/VR. Està pensat per equips que vulguin validar el seu MVP en entorns reals, accedir a mentories expertes i connectar amb l\'ecosistema empresarial i inversor.',
+    'target.location': 'Programa enfocat a projectes de Catalunya',
     'target.technologies': 'Tecnologies Clau',
     'target.sectors': 'Sectors d\'Impacte',
     'target.ai': 'Intel·ligència Artificial',
@@ -249,6 +254,7 @@ const translations = {
     
     // Technologies Section
     'technologies.title': 'Tecnologies Clau i Impacte Sectorial',
+    'technologies.claim': 'Ets una startup en fase early stage, pre-seed o seed? Presenta el teu projecte en alguna de les següents verticals.',
     'technologies.ai.title': 'Intel·ligència Artificial (IA)',
     'technologies.ai.health.title': 'Salut',
     'technologies.ai.health.desc': 'Diagnòstic clínic, tractaments personalitzats',
