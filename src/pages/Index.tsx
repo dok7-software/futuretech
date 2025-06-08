@@ -238,13 +238,13 @@ const Index = () => {
             {[
               { icon: Clock, number: "115", text: t('benefits.hours-training').charAt(0).toUpperCase() + t('benefits.hours-training').slice(1) },
               { icon: Users, number: "80", text: t('benefits.hours-mentoring').charAt(0).toUpperCase() + t('benefits.hours-mentoring').slice(1) },
-              { icon: Target, number: "100%", text: t('benefits.mvp-validation').charAt(0).toUpperCase() + t('benefits.mvp-validation').slice(1) },
+              { icon: Target, number: "\u00A0", text: t('benefits.mvp-validation').charAt(0).toUpperCase() + t('benefits.mvp-validation').slice(1) },
               { icon: Wallet, number: "∞", text: t('benefits.investor-connection').charAt(0).toUpperCase() + t('benefits.investor-connection').slice(1) }
             ].map((benefit, index) => (
               <Card key={index} className="bg-gray-800/30 border-gray-700 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
               <CardContent className="p-8 text-center">
                   <benefit.icon className="h-12 w-12 text-future-tech-accent mx-auto mb-4 group-hover:text-future-tech-accent transition-colors" />
-                  <div className="text-3xl font-tt-lakes font-bold text-future-tech-accent mb-2">{benefit.number}</div>
+                  {benefit.number && <div className="text-3xl font-tt-lakes font-bold text-future-tech-accent mb-2">{benefit.number}</div>}
                   <p className="text-future-tech-secondary font-montreal">{benefit.text}</p>
               </CardContent>
             </Card>
