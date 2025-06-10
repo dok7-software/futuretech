@@ -30,7 +30,6 @@ const HeroMobile = () => {
             <img src="/lovable-uploads/Logo Generalitat de Catalunya.png" alt="Generalitat" className="h-8 object-contain" style={{maxWidth: '100px'}} />
           </div>
           <span className="block text-[10px] text-center leading-tight mt-2 max-w-[280px] font-montreal">
-            {t('logos.leyenda')}
           </span>
         </div>
       </div>

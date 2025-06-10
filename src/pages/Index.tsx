@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Mail, Users, Target, Lightbulb, Network, Shield, Eye, ArrowRight, Clock, Globe, MapPin } from "lucide-react";
+import { Calendar, Mail, Users, Target, Lightbulb, Network, Shield, Eye, ArrowRight, Clock, Globe, MapPin, Wallet } from "lucide-react";
 import Header from "@/components/Header";
 import { useLanguage } from "@/contexts/LanguageContext";
 import StepForm from '../components/StepForm';
@@ -9,6 +9,7 @@ import { useState } from 'react';
 import HeroDesktop from "@/components/HeroDesktop";
 import HeroMobile from "@/components/HeroMobile";
 import { useIsMobile } from "../hooks/useIsMobile";
+import AboutMobile from "@/components/AboutMobile";
 
 const Index = () => {
   const { t, language } = useLanguage();
@@ -25,64 +26,68 @@ const Index = () => {
       )}
       
       {/* What is Future Tech Section */}
-      <section id="about" className="py-20 bg-transparent">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-            <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
-              <span dangerouslySetInnerHTML={{ __html: t('about.title').replace('Future Tech', '<span class="text-future-tech-accent">Future Tech</span>') }} />
-            </h2>
-            <p className="text-xl text-future-tech-secondary leading-relaxed mb-8 font-montreal">
-              {t('about.description')}
-            </p>
-            <div className="grid md:grid-cols-2 gap-6 mt-12">
-              <div className="col-span-2">
-                <p className="text-white font-tt-lakes text-center mb-6">{t('logos.programa')}</p>
-              </div>
-              {/* 22@Network */}
-              <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
-                <CardContent className="p-6 text-center">
-                  <div className="flex items-center justify-center mx-auto mb-4">
-                    <img src="/lovable-uploads/Logo color 22Network.png" alt="22@Network Barcelona" className="h-10 object-contain" />
-                  </div>
-                  <p className="text-black font-montreal">{t('about.22network')}</p>
-                </CardContent>
-              </Card>
-              {/* Cambra de Comerç Barcelona */}
-              <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
-                <CardContent className="p-6 text-center">
-                  <div className="flex items-center justify-center mx-auto mb-4">
-                    <img src="/lovable-uploads/Logo color Cambra de comercio barcelona.png" alt="Cambra de Comerç Barcelona" className="h-10 object-contain" />
-                  </div>
-                  <p className="text-black font-montreal">{t('about.cambra')}</p>
-                </CardContent>
-              </Card>
-              <div className="col-span-2">
-                <p className="text-white font-tt-lakes text-center mb-6">{t('logos.financat')}</p>
-              </div>
-              {/* Unión Europea */}
-              <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
-                <CardContent className="p-6 text-center">
-                  <div className="flex items-center justify-center mx-auto mb-4">
-                    <img src="/lovable-uploads/Logo Color Union europea.png" alt="Unión Europea" className="h-10 object-contain" />
-                  </div>
-                  <p className="text-black font-montreal">{t('about.eu-support')}</p>
-                </CardContent>
-              </Card>
-              {/* Generalitat de Catalunya */}
-              <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
-                <CardContent className="p-6 text-center">
-                  <div className="flex items-center justify-center mx-auto mb-4">
-                    <img src="/lovable-uploads/Logo Color Generalitat de Catalunya.png" alt="Generalitat de Catalunya" className="h-10 object-contain" />
-                  </div>
-                  <p className="text-black font-montreal">{t('about.gencat-support')}</p>
-                </CardContent>
-              </Card>
-              <div className="col-span-2">
-                <p className="text-white font-montreal text-center text-base mt-4">
-                  {t('logos.leyenda')}
-                </p>
+      {isMobile ? (
+        <AboutMobile />
+      ) : (
+        <section id="about" className="py-20 bg-transparent">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+              <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
+                <span dangerouslySetInnerHTML={{ __html: t('about.title').replace('Future Tech', '<span class="text-future-tech-accent">Future Tech</span>') }} />
+              </h2>
+              <p className="text-xl text-future-tech-secondary leading-relaxed mb-8 font-montreal">
+                {t('about.description')}
+              </p>
+              <div className="grid md:grid-cols-2 gap-6 mt-12">
+                <div className="col-span-2">
+                  <p className="text-white font-tt-lakes text-center mb-6">{t('logos.programa')}</p>
+                </div>
+                {/* 22@Network */}
+                <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
+                  <CardContent className="p-6 flex items-center justify-center h-40">
+                    <img src="/lovable-uploads/Logo color 22Network.png" alt="22@Network Barcelona" className="object-contain max-h-[60%] max-w-[60%] mx-auto" />
+                  </CardContent>
+                </Card>
+                {/* Cambra de Comerç Barcelona */}
+                <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
+                  <CardContent className="p-6 flex items-center justify-center h-40">
+                    <img src="/lovable-uploads/Logo color Cambra de comercio barcelona.png" alt="Cambra de Comerç Barcelona" className="object-contain max-h-[60%] max-w-[60%] mx-auto" />
+                  </CardContent>
+                </Card>
+                <div className="col-span-2">
+                  <p className="text-white font-tt-lakes text-center mb-6">{t('logos.financat')}</p>
+                </div>
+                {/* Unión Europea */}
+                <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
+                  <CardContent className="p-6 flex items-center justify-center h-40">
+                    <img src="/lovable-uploads/Logo Color Union europea.png" alt="Unión Europea" className="object-contain max-h-[70%] max-w-[70%] mx-auto" />
+                  </CardContent>
+                </Card>
+                {/* Generalitat de Catalunya */}
+                <Card className="bg-white/80 border-gray-200 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
+                  <CardContent className="p-6 flex items-center justify-center h-40">
+                    <img src="/lovable-uploads/Logo Color Generalitat de Catalunya.png" alt="Generalitat de Catalunya" className="object-contain max-h-[60%] max-w-[60%] mx-auto" />
+                  </CardContent>
+                </Card>
               </div>
             </div>
+          </div>
+        </section>
+      )}
+
+      {/* Target Section */}
+      <section id="target" className="py-20 bg-transparent">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h2 className="text-4xl lg:text-5xl font-tt-lakes font-bold mb-8">
+              <span dangerouslySetInnerHTML={{ __html: t('target.title').replace('¿A quién va dirigido?', '<span class="text-future-tech-accent">¿A quién va dirigido?</span>') }} />
+            </h2>
+            <p className="text-xl text-future-tech-secondary leading-relaxed mb-8 font-montreal">
+              {t('target.subtitle')}
+            </p>
+            <p className="text-xl text-future-tech-accent font-tt-lakes font-semibold mb-12">
+              {t('target.location')}
+            </p>
           </div>
         </div>
       </section>
@@ -101,6 +106,9 @@ const Index = () => {
                 }}
               />
             </h2>
+            <p className="text-xl text-future-tech-secondary leading-relaxed font-montreal max-w-3xl mx-auto">
+              {t('technologies.claim')}
+            </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -223,16 +231,16 @@ const Index = () => {
             {[
               { icon: Clock, number: "115", text: t('benefits.hours-training').charAt(0).toUpperCase() + t('benefits.hours-training').slice(1) },
               { icon: Users, number: "80", text: t('benefits.hours-mentoring').charAt(0).toUpperCase() + t('benefits.hours-mentoring').slice(1) },
-              { icon: Target, number: "100%", text: t('benefits.mvp-validation').charAt(0).toUpperCase() + t('benefits.mvp-validation').slice(1) },
-              { icon: Network, number: "∞", text: t('benefits.investor-connection').charAt(0).toUpperCase() + t('benefits.investor-connection').slice(1) }
+              { icon: Target, number: "\u00A0", text: t('benefits.mvp-validation').charAt(0).toUpperCase() + t('benefits.mvp-validation').slice(1) },
+              { icon: Wallet, number: "∞", text: t('benefits.investor-connection').charAt(0).toUpperCase() + t('benefits.investor-connection').slice(1) }
             ].map((benefit, index) => (
               <Card key={index} className="bg-gray-800/30 border-gray-700 hover:border-future-tech-accent transition-all duration-300 hover:scale-105 group">
-                <CardContent className="p-8 text-center">
+              <CardContent className="p-8 text-center">
                   <benefit.icon className="h-12 w-12 text-future-tech-accent mx-auto mb-4 group-hover:text-future-tech-accent transition-colors" />
-                  <div className="text-3xl font-tt-lakes font-bold text-future-tech-accent mb-2">{benefit.number}</div>
+                  {benefit.number && <div className="text-3xl font-tt-lakes font-bold text-future-tech-accent mb-2">{benefit.number}</div>}
                   <p className="text-future-tech-secondary font-montreal">{benefit.text}</p>
-                </CardContent>
-              </Card>
+              </CardContent>
+            </Card>
             ))}
           </div>
           
