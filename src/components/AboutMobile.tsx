@@ -23,7 +23,7 @@ const AboutMobile = () => {
           <span className="text-sm font-bold leading-tight mb-2 text-white text-center">{t('logos.financat')}</span>
           <div className="flex flex-row gap-4 w-full justify-center">
             <div className="bg-white/80 rounded-xl flex items-center justify-center w-40 h-24">
-              <img src="/lovable-uploads/Logo Color Union europea.png" alt="Unión Europea" className="object-contain max-h-[70%] max-w-[80%]" />
+              <img src="/lovable-uploads/Logo Color Union europea.png" alt="Unión Europea" className="object-contain max-h-[90%] max-w-[90%]" />
             </div>
             <div className="bg-white/80 rounded-xl flex items-center justify-center w-40 h-24">
               <img src="/lovable-uploads/Logo Color Generalitat de Catalunya.png" alt="Generalitat de Catalunya" className="object-contain max-h-[60%] max-w-[80%]" />
