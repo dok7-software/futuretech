@@ -22,7 +22,7 @@ const HeroDesktop = ({ onApplyClick }: { onApplyClick: () => void }) => {
           <div className="flex flex-col items-start max-w-2xl gap-8 animate-slide-in flex-1 mt-8">
             <h1 className="text-5xl lg:text-7xl font-tt-lakes font-bold text-future-tech-accent w-full text-center">{t('hero.title')}</h1>
             <p className="text-2xl lg:text-3xl italic text-future-tech-secondary font-montreal text-center w-full">{t('hero.subtitle')}</p>
-            <div className="w-full flex flex-col gap-4">
+            <div className="w-full flex flex-col gap-4 mt-8">
               <div className="w-full">
                 <div className="border-2 border-future-tech-accent rounded-full px-8 py-4 text-center text-lg lg:text-2xl font-montreal font-semibold text-white tracking-wide w-full" style={{letterSpacing:'0.02em'}}>
                   {t('hero.cta')}
@@ -35,7 +35,7 @@ const HeroDesktop = ({ onApplyClick }: { onApplyClick: () => void }) => {
               </div>
             </div>
             {/* Logos Bar alineada a la izquierda dentro del banner */}
-            <div className="mt-10">
+            <div className="mt-16">
               <div className="flex flex-col items-start gap-2">
                 <div className="flex gap-12 items-end">
                   {/* Columna 1: Finançat per */}
